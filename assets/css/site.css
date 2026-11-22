@@ -450,3 +450,43 @@ a{color:var(--blue)} a:hover{color:var(--blue-2)}
 .check:has(input:checked){border-color:var(--blue);background:#EAF0FF}
 .check input,.consent input{accent-color:var(--blue)}
 :focus-visible{outline-color:var(--blue-glow)}
+
+/* =================== touch of gold =================== */
+:root{--gold:#D4AF37;--gold-light:#F5D77A;--gold-deep:#B8862B;
+  --grad-gold:linear-gradient(135deg,#B8862B 0%,#F5D77A 40%,#D4AF37 65%,#FFF1B8 100%)}
+.site-header{border-bottom:0;box-shadow:0 1px 0 var(--line)}
+.site-header::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--gold-light) 50%,var(--gold) 80%,transparent);opacity:.85}
+.brand-mark{background:var(--grad-blue);box-shadow:inset 0 0 0 1.5px var(--gold-light),0 4px 12px -4px rgba(212,175,55,.6)}
+.announce{background:linear-gradient(90deg,#0B1B2E,#13306B 50%,#0B1B2E);color:#F6FAF9}
+.announce strong{color:var(--gold-light)}
+.announce a{color:var(--gold-light)}
+.announce .spark{background:var(--grad-gold);color:#0B1B2E}
+.announce-close{background:rgba(255,255,255,.12);color:#fff}
+.announce-close:hover{background:rgba(255,255,255,.22)}
+.btn-primary{box-shadow:0 10px 26px -8px rgba(37,99,255,.7),inset 0 0 0 1px rgba(245,215,122,.55),inset 0 1px 0 rgba(255,255,255,.35)}
+.hero-dark .eyebrow{color:var(--gold-light)}
+.hero-dark h1 .hl{background:linear-gradient(90deg,#7DD3FC 0%,#5B8CFF 25%,#F5D77A 50%,#5B8CFF 75%,#7DD3FC 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text}
+.hero-dark .hero-facts li::before{background:var(--gold-light);box-shadow:0 0 10px var(--gold)}
+.orb.o3{background:#D4AF37;opacity:.28}
+.split-label::before{background:var(--blue)}
+.split-label.staff::before{background:var(--gold)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:18px;height:2px;border-radius:2px;background:var(--grad-gold)}
+.stat:nth-child(4){--c:var(--gold)}
+.stat{border-top-width:3px}
+.slider-dots button[aria-current="true"]{background:var(--grad-gold)}
+.slide-card .step-no{color:var(--gold-deep)}
+.flow-row.done{border-color:rgba(212,175,55,.55);background:#FFFBEA}
+.flow-row.done .dot{background:var(--grad-gold);color:#0B1B2E}
+.card:hover{border-color:rgba(212,175,55,.6)}
+.pill{background:var(--grad-gold);color:#0B1B2E}
+.package .price-side .price{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.package .price-side{background:linear-gradient(160deg,#0B1B2E,#13306B);border-left:2px solid var(--gold)}
+.cta-band{box-shadow:inset 0 0 0 1px rgba(245,215,122,.35)}
+.cta-band .btn-primary{background:var(--grad-gold);background-size:180% 100%;color:#0B1B2E;box-shadow:0 10px 26px -8px rgba(212,175,55,.7)}
+.confirm-card .check{background:var(--grad-gold)}
+.confirm-card .check svg path{stroke:#0B1B2E}
+.photo-banner .eyebrow{color:var(--gold-light)}
+.hero-photo::before{background:var(--grad-gold)}
+.site-footer{border-top:0;position:relative}
+.site-footer::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold) 25%,var(--gold-light) 50%,var(--gold) 75%,transparent)}
